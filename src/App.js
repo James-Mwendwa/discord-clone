@@ -1,11 +1,15 @@
-import React from 'react';
-import { Counter } from './features/Counter';
-import './App.css';
+import React from "react";
+// import { Counter } from './features/counter/Counter';
+import "./App.css";
+// import Chat from "./Chat";
+import Sidebar from "./Sidebar";
 
 function App() {
   return (
-    <div className="App">
-     <h2>hello</h2>
+    <div className="app">
+      <Sidebar />
+
+      {/* <Chat /> */}
     </div>
   );
 }
