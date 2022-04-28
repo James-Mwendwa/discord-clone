@@ -8,8 +8,26 @@ import EmojiEmotionsRoundedIcon from "@mui/icons-material/EmojiEmotionsRounded";
 const Chat = () => {
   return (
     <div className="chat">
-     <h2>Lets Chat</h2>
-     <ChatHeader />
+      <h2>Lets Chat</h2>
+      <ChatHeader />
+
+      <div className="chat-me"></div>
+
+      <div className="chat-input">
+        <AddCircleOutlineRoundedIcon fontSize="large" />
+
+        <form>
+          <input placeholder={"Message #TEST CHANNEL"} />
+          <button className="chat-inputButton" type="submit">
+            Send Message
+          </button>
+        </form>
+        <div className="chat-inputIcons">
+          <CardGiftcardRoundedIcon />
+          <EmojiEmotionsRoundedIcon />
+          <GifBoxRoundedIcon />
+        </div>
+      </div>
     </div>
   );
 };
