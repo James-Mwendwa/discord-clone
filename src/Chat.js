@@ -1,5 +1,8 @@
 import "./Chat.css";
 import ChatHeader from "./ChatHeader";
+import Message from './Message';
+
+
 import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRounded";
 import CardGiftcardRoundedIcon from "@mui/icons-material/CardGiftcardRounded";
 import GifBoxRoundedIcon from "@mui/icons-material/GifBoxRounded";
@@ -8,10 +11,13 @@ import EmojiEmotionsRoundedIcon from "@mui/icons-material/EmojiEmotionsRounded";
 const Chat = () => {
   return (
     <div className="chat">
-      <h2>Lets Chat</h2>
       <ChatHeader />
 
-      <div className="chat-me"></div>
+      <div className="chat-messages">
+        <Message />
+        <Message />
+        <Message />
+      </div>
 
       <div className="chat-input">
         <AddCircleOutlineRoundedIcon fontSize="large" />
